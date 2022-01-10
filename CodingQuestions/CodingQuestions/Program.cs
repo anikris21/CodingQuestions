@@ -25,6 +25,13 @@ public class Program
         bool isToeplitzmatrix = toeplitzmatrix.IsToeplitzMatrix(matrix);
         Console.WriteLine(isToeplitzmatrix);
 
+        PeakElement peakElement = new PeakElement();
+        int element = peakElement.getPeakElement(new int[] { 1, 2, 3 });
+        Console.WriteLine(element);
+
+        element = peakElement.getPeakElement(new int[] { 1, 2, 1, 3, 5, 6, 4 });
+        Console.WriteLine(element);
+
         //PermuteString solution = new PermuteString();
         //string str = "ABCD";
 
