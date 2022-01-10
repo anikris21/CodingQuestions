@@ -11,18 +11,23 @@ public class Program
         Console.WriteLine("Hello, World!");
         Console.WriteLine("--------------------------");
 
-        PermuteString solution = new PermuteString();
-        string str = "ABCD";
+        Collections collections = new Collections();
+        collections.TestList();
 
-        Console.WriteLine($"Permutations of  {str}");
-        solution.Permute(str, "", str);
+        collections.TestDictionary();
 
-        Console.WriteLine("----------------------------");
-        for (int i = 0; i < 4; i++)
-        {
-            var s = solution.SwapXor("ABCD", i);
-            Console.WriteLine(s);
-        }
+        //PermuteString solution = new PermuteString();
+        //string str = "ABCD";
+
+        //Console.WriteLine($"Permutations of  {str}");
+        //solution.Permute(str, "", str);
+
+        //Console.WriteLine("----------------------------");
+        //for (int i = 0; i < 4; i++)
+        //{
+        //    var s = solution.SwapXor("ABCD", i);
+        //    Console.WriteLine(s);
+        //}
         Console.ReadKey();
 
     }
