@@ -16,6 +16,15 @@ public class Program
 
         collections.TestDictionary();
 
+        ToeplitzMatrix toeplitzmatrix = new ToeplitzMatrix();
+        int[,] matrix = new int[,] { 
+            { 1, 2, 3, 4 , 1},
+            { 5, 1, 2, 3 , 4}, 
+            { 9, 5, 1, 2 , 3} };
+
+        bool isToeplitzmatrix = toeplitzmatrix.IsToeplitzMatrix(matrix);
+        Console.WriteLine(isToeplitzmatrix);
+
         //PermuteString solution = new PermuteString();
         //string str = "ABCD";
 
