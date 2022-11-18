@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Graph\Connectivity\" />
+    <Folder Include="Graph\ShortestPath\" />
+    <Folder Include="Graph\Sorting\" />
+    <Folder Include="Graph\Traversal\" />
+    <Folder Include="NewFolder\" />
+  </ItemGroup>
+
+</Project>
