@@ -1,11 +1,11 @@
-﻿using CodingQuestions.Graph;
+﻿using CodingQuestions.Graph.Graph;
 
 namespace CodingQuestions
 {
-
-
+    
     public class Program
     {
+
         public static void Main(string[] args)
         {
             List llist = new List();
@@ -25,18 +25,32 @@ namespace CodingQuestions
             // KthNodeTest();
             // SparseVectorTest();
             // BSTTest();
-            TestGraph();
-
-            Console.WriteLine("str to Int, " + StringToInt.stringToInt("123").ToString());
-            Console.WriteLine("str to Int, " + StringToInt.stringToInt("-123").ToString());
+            // TestGraph();
+            TestWordsearch();
+            // Console.WriteLine("str to Int, " + StringToInt.stringToInt("123").ToString());
+           //  Console.WriteLine("str to Int, " + StringToInt.stringToInt("-123").ToString());
 
             Console.WriteLine("---------------- End -----------------------");
             Console.ReadKey();
         }
 
+        public static void TestWordsearch()
+        {
+            char[,] words = new char[,] { {'a', 'b', 'c', 'e' },
+                                          {'s', 'f', 'c', 's' },
+                                          {'s', 'f', 'c', 's' }
+            };
+
+
+            string word = "abcccfa";
+            bool ret = true;
+            ret  = Wordsearch.wordsearchhelper(words, word);
+            Console.WriteLine(ret); 
+        }
+
         public static void TestGraph()
         {
-            Graph g = new Graph(5);
+            Graph.Graph.Graph g = new Graph.Graph.Graph(5);
             g.addEdge(0, 1);
             g.addEdge(1, 2);
             g.addEdge(2, 3);
